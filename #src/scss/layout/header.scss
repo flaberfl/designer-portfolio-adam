@@ -5,11 +5,12 @@
   &__content {
     padding-top: 65px;
     padding-right: 38px;
-    
+
     @media (min-width:$md4+px) {
       display: flex;
     }
-    @media (max-width:$md2-1+px){
+
+    @media (max-width:$md2-1+px) {
       padding-top: 45px;
     }
   }
@@ -36,6 +37,7 @@
 }
 
 .menu {
+  // align-items: center;
 
   // .menu__body
   &__body {
@@ -51,7 +53,6 @@
       overflow: auto;
       transform: translate(0, -100%);
       opacity: 0;
-      // background-color: rgba(134, 67, 220, .9);
       background-color: rgba(134, 67, 220, 1);
       transition: transform 0.8s ease 0s, opacity 0.8s ease 0s;
 
@@ -89,11 +90,11 @@
 
     transition: color 0.3s ease 0s;
 
-    @media (min-width:$md3+px){
+    @media (min-width:$md3+px) {
       &:hover {
         color: $c_4;
         text-decoration: underline;
-      } 
+      }
     }
 
 
