@@ -1,7 +1,7 @@
 .portfolio {
   position: relative;
-  margin: 0px 0px 200px 0px;
-  padding: 60px 0px 200px 0px;
+  // margin: 0px 0px 200px 0px;
+  padding: 60px 0px 68px 0px;
 
   &::after {
     content: '';
@@ -63,6 +63,7 @@
     }
 
     @media (max-width:$md4+px) {
+      margin: 8px 0px 0px 0px;
       font-size: 14px;
     }
   }
