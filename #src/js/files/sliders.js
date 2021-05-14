@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
+let slider_about = new Swiper('.testimonials__slider', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -80,11 +80,11 @@ let slider_about = new Swiper('.about__slider', {
 	//loop: true,
 	//preloadImages: false,
 	//lazy: true,
-	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	//Dotts
+	pagination: {
+		el: '.slider-quality__pagging',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
 		nextEl: '.about__more .more__item_next',
