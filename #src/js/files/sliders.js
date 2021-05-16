@@ -32,7 +32,7 @@ if (sliders) {
 	sliders_bild_callback();
 }
 
-function sliders_bild_callback(params) { }
+function sliders_bild_callback(params) {}
 
 let sliderScrollItems = document.querySelectorAll('._swiper_scroll');
 if (sliderScrollItems.length > 0) {
@@ -58,7 +58,7 @@ if (sliderScrollItems.length > 0) {
 	}
 }
 
-function sliders_bild_callback(params) { }
+function sliders_bild_callback(params) {}
 
 let slider_about = new Swiper('.testimonials__slider', {
 	/*
@@ -81,14 +81,15 @@ let slider_about = new Swiper('.testimonials__slider', {
 	//lazy: true,
 	//Dotts
 	pagination: {
-		el: '.slider-quality__pagging',
+		// el: '.slider-quality__pagging',
+		el: '.slider-pagination',
 		clickable: true,
 	},
 	// Arrows
-	navigation: {
-		nextEl: '.about__more .more__item_next',
-		prevEl: '.about__more .more__item_prev',
-	},
+	// navigation: {
+	// 	nextEl: '.about__more .more__item_next',
+	// 	prevEl: '.about__more .more__item_prev',
+	// },
 	/*
 	breakpoints: {
 		320: {

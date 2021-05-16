@@ -6,12 +6,12 @@
   line-height: 48 / 36 * 100%;
   color: inherit;
 
-  @media (max-width:$md3+px){
-     font-size: 30px; 
+  @media (max-width:$md3+px) {
+    font-size: 30px;
   }
 
-  @media (max-width:$md4+px){
-     font-size: 26px; 
+  @media (max-width:$md4+px) {
+    font-size: 26px;
   }
 }
 
@@ -26,9 +26,9 @@
   font-weight: 400;
   color: $c_3;
 
-  @media (max-width:$md3+px){
+  @media (max-width:$md3+px) {
     padding: 0px 0px 7px 0px;
-     font-size: 16px; 
+    font-size: 16px;
   }
 }
 
@@ -333,7 +333,39 @@ body.ie {
   display: none !important;
 }
 
-//====================================================================================================
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+// .swiper-pagination.swiper-pagination-hidden {
+//   opacity: 0;
+// }
+
+.swiper-pagination-bullet {
+  margin: 0px 10px;
+
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+
+  border: 1px solid #DEBAD9;
+  border-radius: 50%;
+
+}
+
+.swiper-pagination-bullet-active {
+  background: $c_3;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
 //=====================================================================================================================
 ._tabs {}
 
