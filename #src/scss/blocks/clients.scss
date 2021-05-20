@@ -1,6 +1,10 @@
 .clients {
   padding: 100px 0px;
 
+  @media (max-width:$md3+px){
+     padding: 60px 0px; 
+  }
+
   // .clients__container
   &__container {}
 
