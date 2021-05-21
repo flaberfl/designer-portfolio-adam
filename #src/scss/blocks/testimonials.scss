@@ -75,7 +75,7 @@
       margin: 0px 0px 34px 0px;
       width: 98px;
       height: 98px;
-      
+
       @media (max-width:$md4+px) {
         margin: 0px 0px 20px 0px;
         width: 70px;
@@ -97,11 +97,11 @@
   &__text {
     margin: 0px 0px 37px 0px;
     max-width: 560px;
-    
+
     line-height: 32 / 16 * 100%;
-    
+
     letter-spacing: .2px;
-    
+
     @media (max-width:$md3+px) {
       max-width: 100%;
       margin: 0px 0px 27px 0px;
@@ -131,5 +131,9 @@
 
   &__pagination {
     text-align: center;
+  }
+
+  @media (max-width:$md4+px) {
+    padding: 33px 0px 33px 0px;
   }
 }
