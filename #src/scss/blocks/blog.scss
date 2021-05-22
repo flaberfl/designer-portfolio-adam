@@ -1,15 +1,33 @@
 .blog {
   padding: 113px 0px 0px 0px;
 
+  @media (max-width:$md2+px) {
+    padding: 65px 0px 0px 0px;
+  }
+
+  @media (max-width:$md3+px) {
+    padding: 35px 0px 0px 0px;
+  }
+
+  @media (max-width:$md4+px) {
+    padding: 25px 0px 0px 0px;
+  }
+
   // .blog__container
   &__container {
-    display: flex;
+    @media (min-width:$md3+px) {
+      display: flex;
+    }
   }
 
   // .blog__titles
   &__titles {
     margin: 0px 25px 0px 0px;
     flex: 0 0 auto;
+
+    @media (max-width:$md3+px) {
+      margin: 0px 0px 30px 0px;
+    }
   }
 }
 
@@ -17,6 +35,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media (max-width:$md4+px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 
   // .news__item
@@ -52,6 +75,10 @@
     @media (max-width:$md2+px) {
       margin: 0px 30px/1110px * 100% 0px 0px;
     }
+
+    @media (max-width:$md4+px) {
+      width: 48%;
+    }
   }
 
   // .news__image
@@ -71,6 +98,10 @@
     bottom: 0;
 
     z-index: 1;
+
+    @media (max-width:$md3+px) {
+      padding: 0px 6px 6px;
+    }
   }
 
   // .news__date
@@ -80,6 +111,9 @@
     color: $c_1;
     line-height: 21.17 / 16 * 100%;
 
+    @media (max-width:$md2+px) {
+      font-size: 12px;
+    }
   }
 
   // .news__title
@@ -88,6 +122,11 @@
     font-weight: 700;
     color: $c_1;
     line-height: 26.46 / 20 * 100%;
+
+    @media (max-width:$md2+px) {
+      font-size: 16px;
+      line-height: 16 / 16 * 100%;
+    }
   }
 }
 
@@ -99,6 +138,10 @@
     margin: 0px 30px/1110px * 100% 0px 0px;
   }
 
+  @media (max-width:$md4+px) {
+    margin: 0px 0px 30px 0px;
+  }
+
   // .news-main__image
   &__image {
     display: block;
@@ -108,6 +151,10 @@
       display: block;
       max-width: 100%;
     }
+
+    @media (max-width:$md4+px) {
+      margin: 0px 0px 10px 0px;
+    }
   }
 
   // .news-main__date
@@ -115,6 +162,14 @@
     margin: 0px 0px 10px 0px;
 
     color: $c_3;
+
+    @media (max-width:$md3+px) {
+      margin: 0px 0px 5px 0px;
+    }
+
+    @media (max-width:$md4+px) {
+      margin: 0px 0px 0px 0px;
+    }
   }
 
   // .news-main__title
