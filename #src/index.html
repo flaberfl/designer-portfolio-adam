@@ -309,21 +309,42 @@
                 <a href="#!" class="news__title">Every day providing solutions to problems.</a>
               </div>
             </div>
-
-
           </div>
         </div>
       </section>
 
       <section class="contact-me">
         <div class="contact-me__container _container">
+          <div class="contact-me__subtitle subtitle">Contact Me</div>
           <div class="contact-me__top">
-            <div class="contact-me__subtitle subtitle">Contact Me</div>
             <div class="contact-me__text">Let me know if you want to talk
               about a potential collaboration.
-              I'm available for freelance work.</div>
+              I'm available for freelance work.
+            </div>
+            <a class="contact-me__email" href="mailto:infoname@mail.com">infoname@mail.com</a>
           </div>
-          <div class="contact-me__form"></div>
+
+          <form class="contact-me__form form" action="#">
+            <div class="form__line">
+              <input autocomplete="off" type="text" name="name" data-value="What’s your name?" class="input"></div>
+            <div class="form__line">
+              <input autocomplete="off" type="email" name="email" data-error="Ошибка" data-value="Your email"
+                class="input _email _req">
+            </div>
+            <div class="form__line">
+              <textarea name="text" data-value="Tell me about your project"></textarea>
+            </div>
+            <div class="form__footer">
+              <form__btn class="btn">Get a Quote</form__btn>
+              <div class="form__actions">
+                <label class="form__actions-file-add" for="file-download">
+                  <input type="file" id="file-download">
+                </label>
+                <button class="form__actions-file-send" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+
         </div>
       </section>
 
