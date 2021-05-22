@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   flex: 0 1 20%;
   
   max-width: 170px;
@@ -58,9 +58,6 @@
   @media (max-width:$md4+px){
      flex: 0 1 100%; 
   }
-  // @media (max-width: 1023px) {
-  //   flex: 0 1 33.333%;
-  // }
 
   // .client__image
   &__image {
