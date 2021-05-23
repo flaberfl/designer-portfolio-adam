@@ -15,28 +15,50 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
     margin: 0px 0px 36px 0px;
+
+    @media (max-width:$md3+px){
+       flex-wrap: wrap; 
+    }
   }
 
   // .contact-me__text
   &__text {
-    flex: 0 0 512px;
-
+    flex: 0 1 512px;
+    
     font-size: 36px;
     font-weight: 500;
     line-height: 52 / 36 * 100%;
     color: #21232D;
+    
+    @media (max-width:$md2+px){
+      font-size: 30px;
+    }
+    @media (max-width:$md3+px){
+      flex: 0 1 auto;
+      margin: 0px 0px 20px 0px;
+
+      font-size: 24px;
+    }
+
+    @media (max-width:$md4+px){
+       font-size: 20px; 
+    }
   }
 
   // .contact-me__email
   &__email {
-
     font-size: 24px;
     text-decoration: underline;
     color: $c_3;
+
+    @media (max-width:$md2+px) {
+      font-size: 20px;
+    }
+
+    @media (max-width:$md3+px){
+       font-size: 16px; 
+    }
   }
 
-  // .contact-me__form
-  &__form {}
 }

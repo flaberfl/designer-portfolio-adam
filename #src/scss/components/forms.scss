@@ -5,10 +5,18 @@
 	// .form__line
 	&__line {
 		margin: 0px 0px 28px 0px;
+		
+		@media (max-width:$md3+px){
+			margin: 0px 0px 20px 0px;
+		}
 	}
 
 	// .form__footer
-	&__footer {}
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
 
 	// .form__btn
 	&__btn {
@@ -16,16 +24,37 @@
 	}
 
 	// .form__actions
-	&__actions {}
+	&__actions {
+		display: flex;
+		justify-content: end;
+		padding: 7px 8px 0px 0px;
+	}
 
 	// .form__action-file-add
-	&__action-file-add {}
+	&__action-file-add,
+	&__action-file-send {
+		display: block;
+		width: 18px;
+		height: 18px;
+		margin: 0px 0px 0px 20px;
+
+		border: none;
+		cursor: pointer;
+		background: url('../../img/form/file-add.svg') right no-repeat;
+
+		input {
+			display: none;
+		}
+	}
 
 	// .form__action-file-send
-	&__action-file-send {}
+	&__action-file-send {
+		background: url('../../img/icons/arrow-r.svg') center no-repeat;
+		font-size: 0;
+	}
 }
 
-//</FORM>====================================================================================================
+//</FORM>==============================================================================================================
 
 
 
@@ -155,16 +184,20 @@ textarea {
 	padding: 17px 0;
 	border-bottom: 1px solid #DAD2E3;
 
-	// font-family: inherit;
 	font-size: 20px;
 	font-weight: 400;
 	color: #A8A0B0;
 
-	transition: background-color 0.7s ease 0s;
+	transition: border-color 0.7s ease 0s;
+
+	@media (max-width:$md3+px) {
+		padding: 14px 0;
+
+		font-size: 16px;
+	}
 
 	&:focus {
-		border-bottom: 1px solid red;
-		background-color: blue;
+		border-color: $c_3;
 	}
 
 	&._focus {
