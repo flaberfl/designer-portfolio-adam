@@ -1,18 +1,27 @@
 //<FORM ()>====================================================================================================
+
 .form {
-	&__row {}
 
-	&__column {}
+	// .form__line
+	&__line {
+		margin: 0px 0px 28px 0px;
+	}
 
-	&__line {}
+	// .form__footer
+	&__footer {}
 
-	&__input {}
+	// .form__btn
+	&__btn {}
 
-	&__button {}
+	// .form__actions
+	&__actions {}
 
-	&__error {}
+	// .form__action-file-add
+	&__action-file-add {}
+
+	// .form__action-file-send
+	&__action-file-send {}
 }
-
 
 //</FORM>====================================================================================================
 
@@ -136,21 +145,32 @@ textarea {
 	resize: none;
 }
 
-.input {
+.input,
+textarea {
 	border-radius: 0 !important;
 	width: 100%;
 	display: block;
-	padding: 0px 20px;
+	padding: 17px 0;
+	border-bottom: 1px solid #DAD2E3;
+
+
+	font-size: 20px;
+	font-weight: 400;
+	color: #A8A0B0;
 
 	&._focus {}
 
 	&._error {}
 }
 
-textarea.input {
-	resize: none;
-	padding: 0px 0px;
+textarea {
+	height: 61px;
 }
+
+// textarea.input {
+// 	resize: none;
+// 	padding: 0px 0px;
+// }
 
 //</INPUT>====================================================================================================
 

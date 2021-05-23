@@ -317,16 +317,20 @@
         <div class="contact-me__container _container">
           <div class="contact-me__subtitle subtitle">Contact Me</div>
           <div class="contact-me__top">
-            <div class="contact-me__text">Let me know if you want to talk
-              about a potential collaboration.
-              I'm available for freelance work.
+            <div class="contact-me__text">
+              <p>
+                Let me know if you want to talk
+                about a potential collaboration.
+                I'm available for freelance work.
+              </p>
             </div>
             <a class="contact-me__email" href="mailto:infoname@mail.com">infoname@mail.com</a>
           </div>
 
           <form class="contact-me__form form" action="#">
             <div class="form__line">
-              <input autocomplete="off" type="text" name="name" data-value="What’s your name?" class="input"></div>
+              <input autocomplete="off" type="text" name="name" data-value="What’s your name?" class="input">
+            </div>
             <div class="form__line">
               <input autocomplete="off" type="email" name="email" data-error="Ошибка" data-value="Your email"
                 class="input _email _req">
@@ -335,12 +339,12 @@
               <textarea name="text" data-value="Tell me about your project"></textarea>
             </div>
             <div class="form__footer">
-              <form__btn class="btn">Get a Quote</form__btn>
+              <button class="form__btn btn" type="submit">Get a Quote</button>
               <div class="form__actions">
-                <label class="form__actions-file-add" for="file-download">
-                  <input type="file" id="file-download">
+                <label class="form__action-file-add" for="file-add">
+                  <input type="file" id="file-add">
                 </label>
-                <button class="form__actions-file-send" type="submit">Send</button>
+                <button class="form__action-file-send" type="submit">Send</button>
               </div>
             </div>
           </form>
