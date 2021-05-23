@@ -11,7 +11,9 @@
 	&__footer {}
 
 	// .form__btn
-	&__btn {}
+	&__btn {
+		font-size: 18px;
+	}
 
 	// .form__actions
 	&__actions {}
@@ -153,12 +155,14 @@ textarea {
 	padding: 17px 0;
 	border-bottom: 1px solid #DAD2E3;
 
-
+	// font-family: inherit;
 	font-size: 20px;
 	font-weight: 400;
 	color: #A8A0B0;
 
-	&._focus {}
+	&._focus {
+		color: inherit;
+	}
 
 	&._error {}
 }
