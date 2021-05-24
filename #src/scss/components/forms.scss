@@ -180,6 +180,49 @@ textarea {
 	resize: none;
 }
 
+
+
+input::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+
 .input,
 textarea {
 	border-radius: 0 !important;
@@ -188,9 +231,9 @@ textarea {
 	padding: 17px 0;
 	border-bottom: 1px solid #DAD2E3;
 
+	font-family: inherit;
 	font-size: 20px;
 	font-weight: 400;
-	color: #A8A0B0;
 
 	transition: border 0.7s ease 0s;
 
@@ -200,13 +243,15 @@ textarea {
 		font-size: 16px;
 	}
 
+	&::placeholder {
+		color: #A8A0B0;
+	}
+
 	&:focus {
 		border-color: $c_3;
 	}
 
-	&._focus {
-		color: inherit;
-	}
+	&._focus {}
 
 	&._error {}
 }
