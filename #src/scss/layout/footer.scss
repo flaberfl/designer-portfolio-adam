@@ -1,5 +1,33 @@
 footer {
-  padding: 300px;
+  padding: 103px 0px 50px 0px;
+}
+
+.footer {
+
+  // .footer__content
+  &__content {
+    text-align: center;
+  }
+
+  // .footer__title
+  &__title {
+    margin: 0px 0px 32px 0px;
+    font-weight: 500;
+  }
+
+  // .footer__social-icons
+  &__social-icons {}
+
+  // .footer__social-icon
+  &__social-icon {
+    margin: 0px 18px;
+    width: 50px;
+    height: 50px;
+
+    @media (max-width:$md3+px) {
+      margin: 0px 18px/1110px * 100%;
+    }
+  }
 }
 
 //====================================================================================================
