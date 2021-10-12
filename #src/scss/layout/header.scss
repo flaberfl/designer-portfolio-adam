@@ -71,13 +71,17 @@
     @media (min-width:$md4+px) {
       display: flex;
     }
+  }
 
-    li {
-      margin: 0px 42px 0px 0px;
+  // .menu__item
+  &__item {
 
-      @media (max-width:$md4+px) {
-        margin: 0px 0px 20px 0px;
-      }
+    &:not(:last-child) {
+      @include adaptiv-value("margin-right", 42, 20, 1);
+    }
+
+    @media (max-width:$md4+px) {
+      margin: 0px 0px 20px 0px;
     }
   }
 
@@ -85,7 +89,7 @@
   &__link {
     font-size: 20px;
     font-weight: 500;
-    line-height: 26 / 20 * 100%;
+    line-height: 130%;
     color: inherit;
 
     transition: color 0.3s ease 0s;
