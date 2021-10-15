@@ -67,13 +67,13 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 130%;
-    color: inherit;
-
+    color: $c_4;
+    
     transition: color 0.3s ease 0s;
-
+    
     @media (min-width:$md3+px) {
       &:hover {
-        color: $c_4;
+        color: inherit;
         text-decoration: underline;
       }
     }
