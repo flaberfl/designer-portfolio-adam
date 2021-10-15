@@ -1,16 +1,10 @@
 .services {
-  margin: 0px 0px 54px 0px;
+  margin: 0px 0px 84px 0px;
+  // margin: 0px 0px 54px 0px;
 
   @media (max-width:$md2+px) {
     margin: 0px 0px 34px 0px;
   }
-
-  // @media (max-width:$md3+px) {
-  //   margin: 0px 0px 20px 0px;
-  // }
-
-  // .services__subtitle
-  &__subtitle {}
 
   // .services__title
   &__title {
@@ -19,36 +13,32 @@
 
   // .services__items
   &__items {
-    display: flex;
-    justify-content: center;
-    margin: 0px -15px;
 
-    @media (max-width:$md2+px) {
+    @media (min-width:577px) {
+      display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      margin: 0px -15px -30px;
     }
   }
 
   &__column {
     flex: 0 1 33.333%;
-    padding: 0px 15px;
     margin: 0px 0px 30px 0px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
 
     @media (max-width:$md2+px) {
       flex: 0 1 50%;
     }
 
-    @media (max-width: 576px) {
-      flex: 0 1 100%;
+    @media (min-width:577px) {
+      padding: 0px 15px;
     }
   }
 }
 
 .service {
-  height: 100%;
+
+  border: 1px solid red;
 
   // .service__top
   &__top {

@@ -1,11 +1,12 @@
 .hello {
-  padding: 0px 0px 120px 0px;
+  padding: 0px 0px 100px 0px;
 
-  @media (max-width: 626px) {
-    padding: 0px 0px 70px 0px;
+  @media (max-width:$md3+px) {
+    padding: 0px 0px 80px 0px;
   }
 
-  // .hello__container
+  .hello__container {}
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -14,11 +15,15 @@
     @media (max-width:$md2-1+px) {
       justify-content: center;
     }
+
+    @media (max-width: 630px) {
+      background-position: center center !important;
+    }
   }
 
   // .hello__content
   &__content {
-    padding: 124px 0px 0px 5px;
+    padding: 100px 0px 0px 5px;
 
     *:last-child {
       margin-bottom: 0;
@@ -83,9 +88,9 @@
 
   // hello__image
   &__image {
-    flex: 0 1 48%;
-    // padding: 0px 0px 56% 0px;
-    padding: 0px 0px 63% 0px;
+    flex: 0 1 42%;
+    padding: 0px 0px 56% 0px;
+    margin: -20px 0px 0px 0px;
 
     @media (max-width: 630px) {
       display: none;
